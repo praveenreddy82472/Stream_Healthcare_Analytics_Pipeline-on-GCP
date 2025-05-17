@@ -16,6 +16,10 @@ This project demonstrates a real-time healthcare data processing pipeline using 
    - Data exploration via **BigQuery Table Preview** and **Looker Studio (optional)**.
 5. **Machine Learning**:
    - ML models built and trained using **BigQuery ML** on the processed healthcare data.
+  
+## 📌 Dataflow Pipeline Architecture
+
+![Pipeline Architecture](https://github.com/praveenreddy82472/tutorial_test/blob/main/stream_pipe.jpg)
 
 ---
 
