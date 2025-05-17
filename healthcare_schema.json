@@ -1,0 +1,65 @@
+{
+    "BigQuery Schema": [
+
+        {
+            "name": "Name",
+            "type": "STRING"
+        },
+        {
+            "name": "Age",
+            "type": "INTEGER"
+        },
+        {
+            "name": "Gender",
+            "type": "STRING"
+        },
+        {
+            "name": "BloodType",
+            "type": "STRING"
+        },
+        {
+            "name": "MedicalCondition",
+            "type": "STRING"
+        },
+        {
+            "name": "DateofAdmission",
+            "type": "DATE"
+        },
+        {
+            "name": "Doctor",
+            "type": "STRING"
+        },
+        {
+            "name": "Hospital",
+            "type": "STRING"
+        },
+        {
+            "name": "InsuranceProvider",
+            "type": "STRING"
+        },
+        {
+            "name": "BillingAmount",
+            "type": "FLOAT"
+        },
+        {
+            "name": "RoomNumber",
+            "type": "INTEGER"
+        },
+        {
+            "name": "AdmissionType",
+            "type": "STRING"
+        },
+        {
+            "name": "DischargeDate",
+            "type": "DATE"
+        },
+        {
+            "name": "Medication",
+            "type": "STRING"
+        },
+        {
+            "name": "TestResults",
+            "type": "STRING"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+python your_pipeline.py \
+  --project=project2-460014 \
+  --region=us-central1 \
+  --staging_location=gs://streampro18/staging \
+  --temp_location=gs://streampro18/temp \
+  --runner=DataflowRunner \
+  --input_topic=projects/project2-460014/topics/health-records-stream \
+  --raw_table_name=project2-460014:healthdataset.health_stream_records \
+  --agg_table_name=project2-460014:healthdataset.health_agg_records \
+  --window_duration=60
+
+
+
+python3 my_pipelineStream.py \
+  --project=project2-460014 \
+  --region=us-central1 \
+  --staging_location=gs://streampro18/staging \
+  --temp_location=gs://streampro18/temp \
+  --runner=DataflowRunner \
+  --input_topic=projects/project2-460014/topics/health-records-stream \
+  --raw_table_name=project2-460014.healthdataset.health_stream_records \
+  --agg_table_name=project2-460014.healthdataset.health_aggregates \
+  --window_duration=30 \
+  --worker_machine_type=n1-standard-2 \
+  --experiments=enable_streaming_engine \
+  --max_num_workers=3 \
+  --autoscaling_algorithm=THROUGHPUT_BASED
