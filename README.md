@@ -58,3 +58,22 @@ This project demonstrates a real-time healthcare data processing pipeline using 
 - Analyze most common medical conditions
 - Predict billing amounts using historical patterns
 - Visualize KPIs in real time using Looker Studio
+
+
+📝 Project Summary
+In this project, I implemented both batch and streaming data pipelines on Google Cloud Platform (GCP):
+
+✅ Batch Pipeline: Loaded a healthcare dataset from Google Cloud Storage (GCS) into BigQuery using Dataflow (batch mode). This was fast and efficient due to bulk processing.
+
+🌐 Streaming Pipeline: Streamed the same dataset to Pub/Sub, processed it in real time using a Dataflow (streaming) pipeline, parsed JSON, and loaded both raw and aggregated records into BigQuery.
+
+🔍 Key Observation
+The batch pipeline completed much faster, while the streaming pipeline took more time due to:
+
+Continuous event processing
+
+Overheads like windowing, watermarking, and real-time coordination
+
+Small test dataset not leveraging streaming pipeline's full potential
+
+This highlighted the performance and complexity trade-offs between batch and streaming architectures.
